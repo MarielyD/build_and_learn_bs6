@@ -1,0 +1,55 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(216, 223, 229);
+}
+
+.wrapper {
+    display: grid;
+    background-color: #FFFFFF;
+    grid-template-columns: repeat(10 minmax(100px, 1fr));
+    grid-template-rows: repeat(10 minmax(200px , 1fr));
+    justify-content: center;
+}
+
+.heading {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading:after {
+    display: block;
+    content: "";
+    height: 6px;
+    background: rgb(237, 14, 143);
+    margin-top: -80px;
+}
+
+.phone {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    grid-gap: 20px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    justify-items: center;
+    align-content: center;
+    color: dimgrey;
+
+}
+
+.phone__one img{
+    width: 100px;
+    height: auto;
+    justify-items: center;
+}
+
+.phone__two img{
+    width: 100px;
+    height: auto;
+}
+
+.phone__three img{
+    width: 100px;
+    height: auto;
+}
