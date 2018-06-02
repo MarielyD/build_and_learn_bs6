@@ -4,13 +4,165 @@
   <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <title>Simple Transactional Email</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px auto;
+        background-color: rgb(216, 223, 229);
+        width: 720px;
+    }
+
+    .wrapper {
+        display: grid;
+        background-color: #FFFFFF;
+        grid-template-columns: repeat(10 minmax(100px, 1fr));
+        grid-template-rows: repeat(10 minmax(200px , 1fr));
+        justify-content: center;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    .heading {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        color: dimgrey;
+    }
+
+    .heading:after {
+        display: block;
+        width: 100%;
+        content: "";
+        height: 6px;
+        background: rgb(237, 14, 143);
+        margin-top: -80px;
+    }
+
+    .phone > * {
+        display: grid;
+        justify-items: center;
+        /* align-items: center; */
+    }
+
+    .phone {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 200px));
+        grid-template-rows: repeat(2, 220px);
+        grid-gap: 20px;
+        padding: 10px;
+        background-color: #FFFFFF;
+        color: dimgrey;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100;
+    }
+
+    .phone h5 {
+        margin-top: -70px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+
+    }
+
+    .phone__one img{
+        width: 100px;
+        height: auto;
+        justify-items: center;
+    }
+
+    .phone__two img{
+        width: 100px;
+        height: auto;
+    }
+
+    .phone__three img{
+        width: 100px;
+        height: auto;
+    }
+
+    p {
+        align-content: center;
+    }
     </style>
   </head>
   <body>
-    <tr>
-      <td>hello</td>
-    </tr>
+    <section>
+        <div class="wrapper">
+            <div class="heading">
+                <p><h2>How Lyft Works</h2></p>
+            </div>
+
+            <div class="phone">
+                <div class="phone__one">
+                    <p><img src="images/requestpic.png"></p>
+                    <p><h1>Request</h1></p>
+                    <p><h5>Get matched with a friendly, background-checked driver in minutes.</h5></p>
+                </div>
+                <div class="phone__two">
+                    <p><img src="images/phonepick.png"></p>
+                    <p><h1>Ride</h1></p>
+                    <p><h5>Wanna chat? Take the front seat. Feeling quiet? Slide into the back. You choose your ride experience.</h5></p>
+                </div>
+                <div class="phone__three">
+                    <p><img src="images/lastpic.png"></p>
+                    <p><h1>Pay</h1></p>
+                    <p><h5>When the ride ends, simply pay through your phone with your preferred credit card.</h5></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <table width="600px" style="background-color: #eee; text-align: center; margin: auto; padding: 30px 20px">
+      <tr>
+        <td style="font-family: helvetica; font-size: 18px; line-height: 28px; padding: 6px 10px 30px; color: #aaa">
+          <i>"Lyft is a real community - with both the drivers and riders being inherently social - making real friendships and saving money."</i>
+          <br>
+          <b>-Time</b>
+        </td>
+      </tr>
+      <tr>
+        <td class="button" >
+          <a href="http://www.lyft.com" style="background-color: #f800c6; color: white; width: 400px; padding: 15px 40px; margin: 30px; text-decoration: none; text-transform: uppercase; font-family: helvetica">
+            Take your first ride today
+          </a>
+        </td>
+      </tr>
+      <tr style="height: 25px"></tr>
+    </table>
+    <table width="600px" style=" margin: auto; font-family: helvetica; font-size: 11px; margin-top: 10px">
+      <tr>
+        <td>
+          <a href="#" style="text-decoration: none; color:#333">View in browser</a> |
+          <a href="#" style="text-decoration: none; color:#333">Unsuscribe</a> |
+          <a href="#" style="text-decoration: none; color:#333">Contact</a>
+        </td>
+        <td style="text-align: right; color: #333">548 Market St. #68514 San Franciso, CA 94104 &copy 2015 Lyft, Inc</td>
+      </tr>
+    </table>
+    <table width="600px" style="margin: auto; text-align:center; margin-top: 15px">
+      <tr>
+        <td>
+          <i class="fa fa-facebook" style="font-size:24px"></i>&nbsp
+          <i class="fa fa-twitter" style="font-size:24px"></i>&nbsp
+          <i class="fa fa-instagram" style="font-size:24px"></i>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
