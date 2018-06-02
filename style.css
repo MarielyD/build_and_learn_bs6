@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -10,31 +20,50 @@ body {
     grid-template-columns: repeat(10 minmax(100px, 1fr));
     grid-template-rows: repeat(10 minmax(200px , 1fr));
     justify-content: center;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 .heading {
     display: grid;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    color: dimgrey;
 }
 
 .heading:after {
     display: block;
+    width: 100%;
     content: "";
     height: 6px;
     background: rgb(237, 14, 143);
     margin-top: -80px;
 }
 
+.phone > * {
+    display: grid;
+    justify-items: center;
+    /* align-items: center; */
+}
+
 .phone {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 300px));
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-template-rows: repeat(2, 220px);
     grid-gap: 20px;
     padding: 10px;
     background-color: #FFFFFF;
-    justify-items: center;
-    align-content: center;
     color: dimgrey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100;
+}
+
+.phone h5 {
+    margin-top: -70px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 
 }
 
@@ -53,3 +82,8 @@ body {
     width: 100px;
     height: auto;
 }
+
+p {
+    align-content: center;
+}
+
